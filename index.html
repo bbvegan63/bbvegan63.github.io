@@ -15,6 +15,7 @@
             --gray: #64748b;
             --success: #10b981;
             --warning: #f59e0b;
+            --purple: #8b5cf6;
         }
         
         * {
@@ -119,6 +120,14 @@
         
         .btn-warning:hover {
             background-color: #e57e0b;
+        }
+        
+        .btn-purple {
+            background-color: var(--purple);
+        }
+        
+        .btn-purple:hover {
+            background-color: #7c3aed;
         }
         
         /* Hero Section */
@@ -260,6 +269,10 @@
             border-left: 5px solid var(--warning);
         }
         
+        .project-persona {
+            border-left: 5px solid var(--purple);
+        }
+        
         .project h3 {
             color: var(--primary);
             margin-bottom: 15px;
@@ -268,6 +281,10 @@
         
         .project-tourist h3 {
             color: var(--warning);
+        }
+        
+        .project-persona h3 {
+            color: var(--purple);
         }
         
         .project-status {
@@ -282,6 +299,10 @@
         
         .project-status-tourist {
             background-color: var(--warning);
+        }
+        
+        .project-status-persona {
+            background-color: var(--purple);
         }
         
         .project-patents {
@@ -348,6 +369,18 @@
             margin: 5px 0 0;
             color: var(--gray);
             font-size: 0.9rem;
+        }
+        
+        .project-features {
+            margin-top: 20px;
+        }
+        
+        .project-features ul {
+            padding-left: 20px;
+        }
+        
+        .project-features li {
+            margin-bottom: 8px;
         }
         
         /* CTA Section */
@@ -677,26 +710,11 @@
                     <p>A must-have perk for travelers - patent-backed, off-grid travel safety solution that combines a resilient LoRa® mesh with autonomous control and a traveler-centric SOS experience.</p>
                     
                     <div class="project-patents">
-                        <h4>Core IP & Integrated Patents:</h4>
+                        <h4>Core IP:</h4>
                         <div class="patent">
                             <div class="patent-id">US 63,859,951</div>
                             <div class="patent-title">Autonomous Network Healing</div>
                             <div class="patent-desc">Mesh deficiency detection & classification → rule-engine actions (rate-limit, role flip, re-route).</div>
-                        </div>
-                        <div class="patent">
-                            <div class="patent-id">Nokia US 8,923,887</div>
-                            <div class="patent-title">Geo-Prox Safety Circles</div>
-                            <div class="patent-desc">Location-based grouping and broadcasts for muster points and area alerts.</div>
-                        </div>
-                        <div class="patent">
-                            <div class="patent-id">Nokia US 9,634,903</div>
-                            <div class="patent-title">Hub Dashboard on Companion Device</div>
-                            <div class="patent-desc">Segmented emergency status/controls across connected devices for field orchestration.</div>
-                        </div>
-                        <div class="patent">
-                            <div class="patent-id">Panasonic US 9,946,894</div>
-                            <div class="patent-title">Protected Incident Vault</div>
-                            <div class="patent-desc">Secure storage patterns enabling post-incident evidence reconstruction under consent.</div>
                         </div>
                     </div>
                     
@@ -723,22 +741,48 @@
                     </div>
                 </div>
                 
-                <div class="project">
-                    <span class="project-status">Seeking Technical Partners</span>
-                    <h3>Mutual Moat Platform</h3>
-                    <p>A joint defense strategy combining regulated issuance/custody with policy-gated settlement technology. Creates compliance-first liquidity solutions with country-gated features and clean flat settlement.</p>
+                <div class="project project-persona">
+                    <span class="project-status project-status-persona">Seeking AI/ML Experts & Funding</span>
+                    <h3>Persona Album - AI-Powered Multimedia Storytelling</h3>
+                    <p>Automates the creation of personalized multimedia family albums using AI-powered agents, social graph analysis, and trait vectors to generate emotionally resonant, interactive stories from photos and audio narrations.</p>
                     
-                    <div class="project-patents">
-                        <h4>Platform Advantages:</h4>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
                         <ul>
-                            <li>Acceptance matrix (policy on/off by market)</li>
-                            <li>Merchant contracts + corridor playbooks</li>
-                            <li>Patent-pending flows: ring-fence, multi-rail checkout, policy autopilot, regulated exchange</li>
+                            <li>Automates photo organization and layout</li>
+                            <li>Uses AI to personalize storytelling based on relationships and personality</li>
+                            <li>Creates immersive, context-aware narratives that reflect emotional dynamics</li>
+                            <li>Federated collaboration capabilities</li>
                         </ul>
                     </div>
                     
+                    <div class="project-team">
+                        <h4>Team:</h4>
+                        <div class="team-member">
+                            <div class="team-avatar">EO</div>
+                            <div class="team-info">
+                                <h4>Eiko Onishi</h4>
+                                <p>CEO - Former AI startup lead and federated social networking expert</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">AL</div>
+                            <div class="team-info">
+                                <h4>Andrew Leung</h4>
+                                <p>CTO - Full-stack developer with computer vision and ML background</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">BS</div>
+                            <div class="team-info">
+                                <h4>Brian Smith</h4>
+                                <p>Chief Scientist - Psychology background specializing in emotional AI</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div style="margin-top: 20px;">
-                        <a href="mailto:contact@ipnexus.com?subject=Interest in Mutual Moat Platform" class="btn">Learn More</a>
+                        <a href="mailto:contact@ipnexus.com?subject=Interest in Persona Album Project" class="btn btn-purple">Join as AI/ML Expert</a>
                     </div>
                 </div>
             </div>
@@ -793,7 +837,7 @@
                             <option value="">Select a project</option>
                             <option value="points2perks">Points2Perks Japan</option>
                             <option value="touristaid">Tourist Aid</option>
-                            <option value="mutualmoat">Mutual Moat Platform</option>
+                            <option value="personaalbum">Persona Album</option>
                             <option value="other">Other Project</option>
                         </select>
                     </div>
