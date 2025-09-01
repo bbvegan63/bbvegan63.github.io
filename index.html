@@ -16,6 +16,7 @@
             --success: #10b981;
             --warning: #f59e0b;
             --purple: #8b5cf6;
+            --teal: #0d9488;
         }
         
         * {
@@ -128,6 +129,14 @@
         
         .btn-purple:hover {
             background-color: #7c3aed;
+        }
+        
+        .btn-teal {
+            background-color: var(--teal);
+        }
+        
+        .btn-teal:hover {
+            background-color: #0f766e;
         }
         
         /* Hero Section */
@@ -273,6 +282,10 @@
             border-left: 5px solid var(--purple);
         }
         
+        .project-signlanguage {
+            border-left: 5px solid var(--teal);
+        }
+        
         .project h3 {
             color: var(--primary);
             margin-bottom: 15px;
@@ -285,6 +298,10 @@
         
         .project-persona h3 {
             color: var(--purple);
+        }
+        
+        .project-signlanguage h3 {
+            color: var(--teal);
         }
         
         .project-status {
@@ -303,6 +320,10 @@
         
         .project-status-persona {
             background-color: var(--purple);
+        }
+        
+        .project-status-signlanguage {
+            background-color: var(--teal);
         }
         
         .project-patents {
@@ -775,13 +796,6 @@
                             </div>
                         </div>
                         <div class="team-member">
-                            <div class="team-avatar">AL</div>
-                            <div class="team-info">
-                                <h4>Andrew Leung</h4>
-                                <p>CTO - Full-stack developer with computer vision and ML background</p>
-                            </div>
-                        </div>
-                        <div class="team-member">
                             <div class="team-avatar">BS</div>
                             <div class="team-info">
                                 <h4>Brian Smith</h4>
@@ -793,6 +807,74 @@
                     <div style="margin-top: 20px;">
                         <a href="mailto:contact@ipnexus.com?subject=Interest in Persona Album Project" class="btn btn-purple">Join as AI/ML Expert</a>
                         <a href="mailto:contact@ipnexus.com?subject=Request Persona Album Demo" class="btn btn-outline" style="margin-left: 10px;">Request Demo</a>
+                    </div>
+                </div>
+
+                <div class="project project-signlanguage">
+                    <span class="project-status project-status-signlanguage">Seeking Clinical & Technical Partners</span>
+                    <h3>Sign Language Chat - Accessible Mental Wellness Support</h3>
+                    <p>A privacy-first teletherapy platform that combines AI with human oversight to provide 24/7 mental health support for sign language users and individuals with communication impairments.</p>
+                    
+                    <div class="project-patents">
+                        <h4>Core IP:</h4>
+                        <div class="patent">
+                            <div class="patent-id">Patent Pending</div>
+                            <div class="patent-title">Conversational Support System with Sign Language Interface</div>
+                            <div class="patent-desc">AI-powered mental wellness platform with real-time sign language recognition, culturally intelligent filtering, and consent-based human intervention.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Innovations:</h4>
+                        <ul>
+                            <li><strong>Real-time Sign Language Recognition:</strong> Computer vision-based translation of sign language gestures into text</li>
+                            <li><strong>Culturally Intelligent Co-pilot:</strong> Filters potentially insensitive language before translation</li>
+                            <li><strong>Multimodal Affect Recognition:</strong> Analyzes facial expressions and non-manual markers for emotional assessment</li>
+                            <li><strong>Visual Avatar Response:</strong> Renders therapist responses in accurate sign language animations</li>
+                            <li><strong>Gesture-based Consent Verification:</strong> Detects user refusal through sign language gestures</li>
+                            <li><strong>Signing Fatigue Detection:</strong> Monitors for physical/cognitive overload during sessions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-team">
+                        <h4>Team:</h4>
+                        <div class="team-member">
+                            <div class="team-avatar">SL</div>
+                            <div class="team-info">
+                                <h4>Sam Leung</h4>
+                                <p>Founder - AI/UX Specialist with focus on accessibility</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">EL</div>
+                            <div class="team-info">
+                                <h4>Eric Lau</h4>
+                                <p>Lead Developer - Natural Language Processing Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-team">
+                        <h4>Advisors:</h4>
+                        <div class="team-member">
+                            <div class="team-avatar">TC</div>
+                            <div class="team-info">
+                                <h4>Licensed Therapist</h4>
+                                <p>Clinical Advisor - Specializing in teletherapy practices</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">SA</div>
+                            <div class="team-info">
+                                <h4>Sign Language Expert</h4>
+                                <p>Accessibility Advisor - Hong Kong Sign Language (HKSL) specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <a href="mailto:contact@ipnexus.com?subject=Interest in Sign Language Chat Project" class="btn btn-teal">Join as Clinical Partner</a>
+                        <a href="mailto:contact@ipnexus.com?subject=Request Sign Language Chat Demo" class="btn btn-outline" style="margin-left: 10px;">Request Demo</a>
                     </div>
                 </div>
             </div>
@@ -848,6 +930,7 @@
                             <option value="points2perks">Points2Perks Japan</option>
                             <option value="touristaid">Tourist Aid</option>
                             <option value="personaalbum">Persona Album</option>
+                            <option value="signlanguagechat">Sign Language Chat</option>
                             <option value="other">Other Project</option>
                         </select>
                     </div>
